@@ -1,7 +1,7 @@
 // Initialize and add the map
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 2,
+    zoom: 3,
     center: new google.maps.LatLng(0, 0),
     mapTypeId: 'terrain',
     gestureHandling: 'greedy'
@@ -48,8 +48,6 @@ function initMap() {
     lat: 19.432600481483334,
     lng: -99.13328647613525
   };
-
-
 
 
   // The markers
