@@ -8,7 +8,7 @@ function initialize() {
     disableDefaultUI: true,
     center: {
       lat: 0,
-      lng: 0
+      lng: 16
     }
   });
 
