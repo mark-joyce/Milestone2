@@ -3,7 +3,7 @@ var labelIndex = 0;
 
 function initialize() {
   var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 2,
+    zoom: 3,
     gestureHandling: 'greedy',
     disableDefaultUI: true,
     center: {
