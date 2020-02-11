@@ -5,8 +5,7 @@
   height: 100%;
 }
 
-html,
-body {
+.body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -14,11 +13,17 @@ body {
 
 #firstHeading {
   font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#bodyContent {
+  font-family: 'Montserrat', sans-serif;
 }
 
 #sidebar-wrapper {
   min-height: 100vh;
   margin-left: -15rem;
+  color: black;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -31,12 +36,14 @@ body {
 }
 
 .brand {
-  width: 160px;
-  display: block;
+  width: 240px;
   margin-left: 90px;
-  margin-right: 40px;
   position: fixed;
-  bottom: 0px;
+  bottom: 20px;
+}
+
+.nav-link {
+  color: black;
 }
 
 @media (min-width: 768px) {
