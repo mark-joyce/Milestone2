@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="assets/images/favicon-earth.png" type="image/png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>The Digital Nomad 9</title>
@@ -16,22 +15,38 @@
     <div class="d-flex" id="wrapper">
 
       <!-- Sidebar -->
-      <div class="bg-white border-right" id="sidebar-wrapper">
-        <div class="sidebar-heading">Welcome Digital Nomads!</div>
-        <div class="sidebar-heading2">Use The Interactive Map To See and Click on The Top Destinations Worldwide For Nomads 🌴</div>
-        <div class="sidebar-heading3">See Which Location Fits You Best, Find Remote Work, Buy Flights and Book Accommodation ✈️</div>
+      <div class="bg-light border-right" id="sidebar-wrapper">
 
-        <div class="sidebar-logo">
-            <img src="Digital-Nomad-9.png" alt="Logo">
+        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Welcome!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Nomadic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Sponsors</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Welcome Digital Nomads!<br> <br>
+            Use The Interactive Map To See and Click <br> on The Top Destinations Worldwide For Nomads 🌴 <br><br>
+            See Which Location Fits <br> You Best, Find Remote Work, Buy Flights and Book Accommodation ✈️</div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Welcome Digital Nomads!<br> <br>
+            Use The Interactive Map To See and Click <br> on The Top Destinations Worldwide For Nomads 🌴 <br><br>
+            See Which Location Fits <br> You Best, Find Remote Work, Buy Flights and Book Accommodation ✈️</div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Welcome Digital Nomads!<br> <br>
+            Use The Interactive Map To See and Click <br> on The Top Destinations Worldwide For Nomads 🌴 <br><br>
+            See Which Location Fits <br> You Best, Find Remote Work, Buy Flights and Book Accommodation ✈️</div>
         </div>
 
+      <img src="https://e3e34c3d-3a2a-4929-aad3-98c2c18b1857.ws-eu01.gitpod.io/mini-browser/workspace/Milestone2/assets/images/Digital-Nomad-9.png" class="brand" alt="Site Logo">
 
       </div>
 
       <!-- Page Content -->
       <div id="page-content-wrapper">
         <div class="container-fluid">
-
         </div>
         <div id="map"></div>
       </div>
@@ -39,9 +54,8 @@
     </div>
 
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ-eh8KMTg3CdwD7fTy0sKQBKFIA32ypM&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk"></script>
     <script src="assets/js/maps.js"></script>
-    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
