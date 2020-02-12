@@ -1,4 +1,4 @@
-# 'The Digital Nomad 9' Interactive World Map Site
+# 'The Nomad 9' Interactive World Map Site
 
 Milestone Two Project: Interactive Frontend Development - Code Institute
 

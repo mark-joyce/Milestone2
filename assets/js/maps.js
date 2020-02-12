@@ -1,422 +1,141 @@
-var labels = '123456789';
-var labelIndex = 0;
-
-function initMap() {
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 3,
-    gestureHandling: 'greedy',
-    disableDefaultUI: true,
-    restriction: {
-      latLngBounds: {
-        north: 85,
-        south: -85,
-        west: -180,
-        east: 180
-      }
-    },
-    center: {
-      lat: 0,
-      lng: 16
-    }
-  });
-
-  // Canggu No.1
-
-  var canggu = {
-    lat: -8.650374779810114,
-    lng: 115.13611793518066
-  };
-
-
-  var contentString = '<div id="content">' +
-    '<div id="siteNotice">' +
-    '</div>' +
-    '<h1 id="firstHeading" class="firstHeading">Canggu, Bali - Indonesia</h1>' +
-    '<div id="bodyContent">' +
-    '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-    'sandstone rock formation in the southern part of the ' +
-    'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-    'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-    '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
-    'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
-    'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
-    'Aboriginal people of the area. It has many springs, waterholes, ' +
-    'rock caves and ancient paintings. Uluru is listed as a World ' +
-    'Heritage Site.</p>' +
-    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
-    '(last visited June 22, 2009).</p>' +
-    '</div>' +
-    '</div>';
-
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-
-  var marker = new google.maps.Marker({
-    position: canggu,
-    map: map,
-    title: 'canggu',
-    label: labels[labelIndex++ % labels.length]
-  });
-
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-
-
-  // Chiang Mai No.2
-
-  var chiangmai = {
-    lat: 18.788911265422144,
-    lng: 98.98707389831543
-  };
-
-
-  var contentString = '<div id="content">' +
-    '<div id="siteNotice">' +
-    '</div>' +
-    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-    '<div id="bodyContent">' +
-    '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-    'sandstone rock formation in the southern part of the ' +
-    'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-    'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-    '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
-    'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
-    'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
-    'Aboriginal people of the area. It has many springs, waterholes, ' +
-    'rock caves and ancient paintings. Uluru is listed as a World ' +
-    'Heritage Site.</p>' +
-    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
-    '(last visited June 22, 2009).</p>' +
-    '</div>' +
-    '</div>';
-
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-
-  var marker = new google.maps.Marker({
-    position: chiangmai,
-    map: map,
-    title: 'chiangmai',
-    label: labels[labelIndex++ % labels.length]
-  });
-
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-
-
-  // Buenos Aires No.3
-
-  var buenosaires = {
-    lat: -34.607568127801215,
-    lng: -58.43756675720214
-  };
-
-
-  var contentString = '<div id="content">' +
-    '<div id="siteNotice">' +
-    '</div>' +
-    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-    '<div id="bodyContent">' +
-    '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-    'sandstone rock formation in the southern part of the ' +
-    'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-    'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-    '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
-    'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
-    'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
-    'Aboriginal people of the area. It has many springs, waterholes, ' +
-    'rock caves and ancient paintings. Uluru is listed as a World ' +
-    'Heritage Site.</p>' +
-    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
-    '(last visited June 22, 2009).</p>' +
-    '</div>' +
-    '</div>';
-
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-
-  var marker = new google.maps.Marker({
-    position: buenosaires,
-    map: map,
-    title: 'buenosaires',
-    label: labels[labelIndex++ % labels.length]
-  });
-
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-
-  // Prague No.4
-
-  var prague = {
-    lat: 50.087409586962714,
-    lng: 14.421272277832031
-  };
-
-
-  var contentString = '<div id="content">' +
-    '<div id="siteNotice">' +
-    '</div>' +
-    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-    '<div id="bodyContent">' +
-    '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-    'sandstone rock formation in the southern part of the ' +
-    'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-    'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-    '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
-    'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
-    'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
-    'Aboriginal people of the area. It has many springs, waterholes, ' +
-    'rock caves and ancient paintings. Uluru is listed as a World ' +
-    'Heritage Site.</p>' +
-    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
-    '(last visited June 22, 2009).</p>' +
-    '</div>' +
-    '</div>';
-
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-
-  var marker = new google.maps.Marker({
-    position: prague,
-    map: map,
-    title: 'prague',
-    label: labels[labelIndex++ % labels.length]
-  });
-
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-
-  // Medellin No.5
-
-  var medellin = {
-    lat: 6.24440122931306,
-    lng: -75.57297706604004
-  };
-
-
-  var contentString = '<div id="content">' +
-    '<div id="siteNotice">' +
-    '</div>' +
-    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-    '<div id="bodyContent">' +
-    '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-    'sandstone rock formation in the southern part of the ' +
-    'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-    'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-    '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
-    'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
-    'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
-    'Aboriginal people of the area. It has many springs, waterholes, ' +
-    'rock caves and ancient paintings. Uluru is listed as a World ' +
-    'Heritage Site.</p>' +
-    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
-    '(last visited June 22, 2009).</p>' +
-    '</div>' +
-    '</div>';
-
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-
-  var marker = new google.maps.Marker({
-    position: medellin,
-    map: map,
-    title: 'medellin',
-    label: labels[labelIndex++ % labels.length]
-  });
-
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-
-  // Lisbon No.6
-
-  var lisbon = {
-    lat: 38.708218629351634,
-    lng: -9.136676788330078
-  };
-
-  var contentString = '<div id="content">' +
-    '<div id="siteNotice">' +
-    '</div>' +
-    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-    '<div id="bodyContent">' +
-    '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-    'sandstone rock formation in the southern part of the ' +
-    'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-    'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-    '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
-    'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
-    'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
-    'Aboriginal people of the area. It has many springs, waterholes, ' +
-    'rock caves and ancient paintings. Uluru is listed as a World ' +
-    'Heritage Site.</p>' +
-    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
-    '(last visited June 22, 2009).</p>' +
-    '</div>' +
-    '</div>';
-
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-
-  var marker = new google.maps.Marker({
-    position: lisbon,
-    map: map,
-    title: 'lisbon',
-    label: labels[labelIndex++ % labels.length]
-  });
-
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-
-  // Budapest No.7
-
-  var budapest = {
-    lat: 47.498473895818734,
-    lng: 19.039735794067383
-  };
-
-
-  var contentString = '<div id="content">' +
-    '<div id="siteNotice">' +
-    '</div>' +
-    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-    '<div id="bodyContent">' +
-    '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-    'sandstone rock formation in the southern part of the ' +
-    'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-    'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-    '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
-    'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
-    'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
-    'Aboriginal people of the area. It has many springs, waterholes, ' +
-    'rock caves and ancient paintings. Uluru is listed as a World ' +
-    'Heritage Site.</p>' +
-    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
-    '(last visited June 22, 2009).</p>' +
-    '</div>' +
-    '</div>';
-
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-
-  var marker = new google.maps.Marker({
-    position: budapest,
-    map: map,
-    title: 'budapest',
-    label: labels[labelIndex++ % labels.length]
-  });
-
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-
-  // Ho Chi Minh City No.8
-
-  var hochiminhcity = {
-    lat: 10.775638537653744,
-    lng: 106.7021369934082
-  };
-
-  var contentString = '<div id="content">' +
-    '<div id="siteNotice">' +
-    '</div>' +
-    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-    '<div id="bodyContent">' +
-    '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-    'sandstone rock formation in the southern part of the ' +
-    'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-    'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-    '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
-    'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
-    'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
-    'Aboriginal people of the area. It has many springs, waterholes, ' +
-    'rock caves and ancient paintings. Uluru is listed as a World ' +
-    'Heritage Site.</p>' +
-    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
-    '(last visited June 22, 2009).</p>' +
-    '</div>' +
-    '</div>';
-
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-
-  var marker = new google.maps.Marker({
-    position: hochiminhcity,
-    map: map,
-    title: 'hochiminhcity',
-    label: labels[labelIndex++ % labels.length]
-  });
-
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-
-  // Kuala Lumpur No.9
-
-  var kualalumpur = {
-    lat: 3.1569707170633405,
-    lng: 101.70086860656738
-  };
-
-
-  var contentString = '<div id="content">' +
-    '<div id="siteNotice">' +
-    '</div>' +
-    '<h1 id="firstHeading" class="firstHeading">Kuala Lumpur - Malaysia </h1>' +
-    '<div id="bodyContent">' +
-    '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-    'sandstone rock formation in the southern part of the ' +
-    'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-    'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-    '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
-    'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
-    'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
-    'Aboriginal people of the area. It has many springs, waterholes, ' +
-    'rock caves and ancient paintings. Uluru is listed as a World ' +
-    'Heritage Site.</p>' +
-    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
-    '(last visited June 22, 2009).</p>' +
-    '</div>' +
-    '</div>';
-
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-
-  var marker = new google.maps.Marker({
-    position: kualalumpur,
-    map: map,
-    title: 'kualalumpur',
-    label: labels[labelIndex++ % labels.length]
-  });
-
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-
-
-}
-
-google.maps.event.addDomListener(window, 'load', initMap);
+                var map;
+                var InforObj = [];
+                var centerCords = {
+                  lat: 0,
+                  lng: 16
+                };
+
+                var markersOnMap = [{
+                    placeName: "Bali - Indonesia",
+                    contentMarker: '</h1><p>Lorem ipsum dolor sit amet, detraxit.</p></div>',
+                    LatLng: [{
+                      lat: -8.650374779810114,
+                      lng: 115.13611793518066
+                    }]
+                  },
+                  {
+                    placeName: "Chiang Mai - Thailand",
+                    contentMarker: '</h1><p>Lorem ipsum dolor sit detraxit.</p></div>',
+                    LatLng: [{
+                      lat: 18.788911265422144,
+                      lng: 98.98707389831543
+                    }]
+                  },
+                  {
+                    placeName: "Buenos Aires - Argentina",
+                    contentMarker: '</h1><p>Lorem ipsum, vel ea tantas omittam detraxit.</p></div>',
+                    LatLng: [{
+                      lat: -34.607568127801215,
+                      lng: -58.43756675720214
+                    }]
+                  },
+                  {
+                    placeName: "Prague - Czech Republic",
+                    contentMarker: '</h1><p>Lorem ipsum dolor sit amet, vel ea tantas.</p></div>',
+                    LatLng: [{
+                      lat: 50.087409586962714,
+                      lng: 14.421272277832031
+                    }]
+                  },
+                  {
+                    placeName: "Medellin - Colombia",
+                    contentMarker: '</h1><p>Lorem ipsum, omittam detraxit.</p></div>',
+                    LatLng: [{
+                      lat: 6.24440122931306,
+                      lng: -75.57297706604004
+                    }]
+                  },
+                  {
+                    placeName: "Lisbon - Portugal",
+                    contentMarker: '</h1><p>Lorem ipsum dolor sit amet, vel ea detraxit.</p></div>',
+                    LatLng: [{
+                      lat: 38.708218629351634,
+                      lng: -9.136676788330078
+                    }]
+                  },
+                  {
+                    placeName: "Budapest - Hungary",
+                    contentMarker: '</h1><p>Lorem ipsum dolor sit amet, tantas omittam detraxit.</p></div>',
+                    LatLng: [{
+                      lat: 47.498473895818734,
+                      lng: 19.039735794067383
+                    }]
+                  },
+                  {
+                    placeName: "Ho Chi Minh City - Vietnam",
+                    contentMarker: '</h1><p>Lorem ipsum dolor sit amet, vel ea tantas omittam detraxit.</p></div>',
+                    LatLng: [{
+                      lat: 10.775638537653744,
+                      lng: 106.7021369934082
+                    }]
+                  },
+                  {
+                    placeName: "Kuala Lumpur - Malaysia",
+                    contentMarker: '</h1><p>Lorem ipsum dolor sit amet, vix mutat posse suscipit id, vel ea tantas omittam detraxit.</p></div>',
+                    LatLng: [{
+                      lat: 3.1569707170633405,
+                      lng: 101.70086860656738
+                    }]
+                  }
+                ];
+
+                window.onload = function() {
+                  initMap();
+                };
+
+                function addMarker() {
+                  for (var i = 0; i < markersOnMap.length; i++) {
+                    var contentString = '<div id="content"><h1>' + markersOnMap[i].placeName + markersOnMap[i].contentMarker;
+
+                    const marker = new google.maps.Marker({
+                      position: markersOnMap[i].LatLng[0],
+                      label: labels[labelIndex++ % labels.length],
+                      map: map
+                    });
+
+                    const infowindow = new google.maps.InfoWindow({
+                      content: contentString
+                    });
+
+                    marker.addListener('click', function() {
+                      closeOtherInfo();
+                      infowindow.open(marker.get('map'), marker);
+                      InforObj[0] = infowindow;
+                    });
+                  }
+                }
+
+                function closeOtherInfo() {
+                  if (InforObj.length > 0) {
+                    /* detach the info-window from the marker ... undocumented in the API docs */
+                    InforObj[0].set("marker", null);
+                    /* and close it */
+                    InforObj[0].close();
+                    /* blank the array */
+                    InforObj.length = 0;
+                  }
+                }
+
+                var labels = '123456789';
+                var labelIndex = 0;
+
+                function initMap() {
+                  map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 3,
+                    gestureHandling: 'greedy',
+                    disableDefaultUI: true,
+                    restriction: {
+                      latLngBounds: {
+                        north: 85,
+                        south: -85,
+                        west: -180,
+                        east: 180
+                      }
+                    },
+                    center: {
+                      lat: 0,
+                      lng: 16
+                    }
+                  });
+                  addMarker();
+                }
