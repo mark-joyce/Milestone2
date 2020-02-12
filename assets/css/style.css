@@ -10,9 +10,11 @@
   padding: 0;
 }
 
-#content {
+#heading {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 900px;
 }
+
 
 #home {
   padding-top: 30px;
@@ -46,6 +48,19 @@
 
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
+}
+
+.button {
+  background-color: #009900;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
 }
 
 .brand {
