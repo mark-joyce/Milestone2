@@ -29,8 +29,8 @@
 }
 
 .button:hover {
-    color: #0056b3;
-    text-decoration: underline;
+    color: #a9a9a9;
+    text-decoration: none;
 }
 
 .brand {
