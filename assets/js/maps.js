@@ -1,6 +1,7 @@
                 var map;
                 var InforObj = [];
 
+                /* Marker Content and Locations */
                 var markersOnMap = [{
                     placeName: "Bali - Indonesia",
                     contentMarker: '</h1><h5><u>What You Need To Know:</u></h5><h6><ul><li>Lifestyle + Quality of Life - Laid Back, Outdoors but Humid With Poor Healthcare</li><li>Cost of Living - Average of $1000 Per Month</li><li>Things To Do In The Area - Surf or Swim At The Beach, Nice Restaraunts and Nightlife, Hiking Trails In The Green Hills</li><li>Visa Requirements - eVisa Upon Arrival</li><li>Nomad Friendliness - Internet Speed = 20mb/ps, Lots of Places To Work From, Friendly to Foreigners</li></ul></h6> <a class="button" href="https://weworkremotely.com/" target=”_blank”>Find Remote Work</a> <a class="button" href="https://www.skyscanner.ie/flights-to/dps/cheap-flights-to-bali-(denpasar)-airport.html" target=”_blank”>Book Your Flight</a> <a class="button" href="https://www.airbnb.com/s/Bali--Indonesia/homes" target=”_blank”>Book Your Accommodation</a></div>',
@@ -75,10 +76,12 @@
                   }
                 ];
 
+                /* Map API Called */
                 window.onload = function() {
                   initMap();
                 };
 
+                /* InfoWindow Popup Content and Numbered Labelled Markers */
                 function addMarker() {
                   for (var i = 0; i < markersOnMap.length; i++) {
                     var contentString = '<div id="heading"><h1>' + markersOnMap[i].placeName + markersOnMap[i].contentMarker;
@@ -101,20 +104,23 @@
                   }
                 }
 
+                /* InfoWindow Popup Close X */
                 function closeOtherInfo() {
                   if (InforObj.length > 0) {
-                    /* detach the info-window from the marker ... undocumented in the API docs */
+                    
                     InforObj[0].set("marker", null);
-                    /* and close it */
+                    
                     InforObj[0].close();
-                    /* blank the array */
+                    
                     InforObj.length = 0;
                   }
                 }
 
+                /* Marker Labels Numbered 1-9 */
                 var labels = '123456789';
                 var labelIndex = 0;
 
+                /* Map Called With Zoom Level on Load, Cursor Handle Greedy, Default Google Maps UI disabled, Map Restricted to Block Dragging To Grey Area, Map Centered On Load */
                 function initMap() {
                   map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 3,
