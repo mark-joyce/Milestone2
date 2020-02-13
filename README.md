@@ -63,13 +63,52 @@ The colour scheme used is simple with most colour coming from the map. The left 
 
 
 ## Deployment
-This site is hosted using GitHub pages, deployed directly from the master branch.
-I used GitPod to create the site, firstly creating the correct folders and files.
-In the terminal, I used git add, then git commit -m using specific messages for each change made, and then git push to commit the changes of code or files to the github master branch every time.
-The deployed site will update automatically upon new commits to the master branch.
-In order for the site to deploy correctly on GitHub pages, the landing page is named `index.html`, with the css, images and js files linked to it.
-To run locally, you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/mark-joyce/Milestone2` into your terminal.
-To cut ties with this GitHub repository, type `git remote rm origin` into the terminal.
+The site was developed using GitPod. To keep records of different versions of all project files git version control system was used. 
+
+In order to track the changes in the local repository the following steps were taken:
+
+- command `git add 'filename'` - to update what will be committed;
+
+- command `git commit` - to commit the changes.
+
+Using `git push` command all changes from the local repository were pushed to the remote one on GitHub.
+
+
+This project is hosted using GitHub pages, deployed directly from the `master` branch. 
+
+To deploy my project from GitHub I followed these steps:
+
+1. On GitHub website I logged onto my account and navigated to [my repository](https://github.com/mark-joyce/Milestone2);
+
+2. Under my repository name, I clicked on **Settings** tab;
+
+3. I scrolled down to the **GitHub Pages** section;
+
+4. On the **Select source** drop-down menu I selected `master` as my GitHub Pages publishing source;
+
+5. I clicked **Save**.
+
+The deployed site will update automatically upon new commits to the `master` branch. It is important to remember that for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
+
+In order to clone my GitHub repository to your local one you should follow these steps:
+
+1. On GitHub navigate to [my repository](https://github.com/mark-joyce/Milestone2);
+
+2. Under the repository name, click **Clone or download**;
+
+3. In the Clone with HTTPs section, copy the clone URL for the repository;
+
+4. Go to IDE that you are using and open terminal;
+
+5. Change the current working directory to the location where you want the cloned directory to be made;
+
+6. Type `git clone` and then paste the URL you copied in Step 3;
+
+```
+$ git clone https://github.com/mark-joyce/Milestone2
+```
+
+7. Lastly press **Enter** and your local repository will be created.
 
 ## Credits
 
