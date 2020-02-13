@@ -18,6 +18,7 @@
 .button {
   background-color: #009900;
   border: none;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   padding: 10px 31px;
   text-align: center;
@@ -29,9 +30,9 @@
 }
 
 .button:hover {
-    color: white;
-    background-color: #00993b;
-    text-decoration: none;
+  color: white;
+  background-color: #004f0d;
+  text-decoration: none;
 }
 
 .brand {
