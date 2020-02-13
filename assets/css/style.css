@@ -15,46 +15,11 @@
   font-weight: 900px;
 }
 
-
-#home {
-  padding-top: 30px;
-  padding-left: 10px;
-}
-
-#profile {
-  padding-top: 30px;
-  padding-left: 10px;
-}
-
-#contact {
-  padding-top: 30px;
-  padding-left: 10px;
-}
-
-#bodyContent {
-  font-family: 'Montserrat', sans-serif;
-}
-
-#sidebar-wrapper {
-  min-height: 969px;
-  margin-left: -240px;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-}
-
-#page-content-wrapper {
-  min-width: 1920px;
-}
-
-#wrapper.toggled #sidebar-wrapper {
-  margin-left: 0;
-}
-
 .button {
   background-color: #009900;
   border: none;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 31px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -63,16 +28,35 @@
   border-radius: 16px;
 }
 
-
 .brand {
-  width: 240px;
-  margin-left: 90px;
-  position: fixed;
-  bottom: 20px;
+  width: 180px;
+  bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-.nav-link {
-  color: black;
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
 }
 
 @media (min-width: 768px) {
