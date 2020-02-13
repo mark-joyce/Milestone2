@@ -28,6 +28,11 @@
   border-radius: 16px;
 }
 
+.button:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
 .brand {
   width: 180px;
   bottom: 10px;
