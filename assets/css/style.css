@@ -29,6 +29,7 @@
 }
 
 .button:hover {
+    color: white;
     background-color: #00993b;
     text-decoration: none;
 }
