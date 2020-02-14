@@ -6,6 +6,8 @@ This is an Interactive site that calls on the Google Maps API to show the best d
 The site has a map that marks the best destinations around the world, best for aspiring or veteran digital nomads to work & live from.
 When a marker location is clicked - all helpful information, details & useful links show up in a popup above the marker.
 
+![alt text](https://github.com/mark-joyce/Milestone2/blob/master/assets/images/4-device-image.png "Multi-Device Site Image")
+
 ## Live Website
 The live website for the agency can be found [here](https://mark-joyce.github.io/Milestone2).
 
