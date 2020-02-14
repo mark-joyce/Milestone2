@@ -1,20 +1,25 @@
+/* Sites Font */
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+/* Map Setup */
 #map {
   height: 100%;
 }
 
+/* Body's Content Setup */
 .body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
+/* Heading of Placename and Country in Google Maps InfoWindow Popup */
 #heading {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600px;
 }
 
+/* Button in Maps InfoWindow Popup */
 .button {
   background-color: #009900;
   border: none;
@@ -30,12 +35,14 @@
   border-radius: 16px;
 }
 
+/* Curser Hover Over Button in Maps InfoWindow Popup */
 .button:hover {
   color: white;
   background-color: #004f0d;
   text-decoration: none;
 }
 
+/* 'TheNomad9' Logo */
 .brand {
   width: 180px;
   bottom: 10px;
@@ -44,7 +51,7 @@
   display: block;
 }
 
-
+/* Left Sidebar Sizes */
 #sidebar-wrapper {
   min-height: 100vh;
   margin-left: -15rem;
@@ -59,6 +66,7 @@
   width: 15rem;
 }
 
+/* Page Content Size - Map */
 #page-content-wrapper {
   min-width: 100vw;
 }
@@ -67,6 +75,7 @@
   margin-left: 0;
 }
 
+/* Left Sidebar Collapses and Isn't Shown On Devices Below 768px */
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
@@ -82,9 +91,11 @@
   }
 }
 
+/* Mobile-Responsive Version of Site, Hidden on Desktop */
 .mobileShow {
   display: none;
 }
+
 
 @media only screen and (min-width : 320px) and (max-width : 767px) {
 

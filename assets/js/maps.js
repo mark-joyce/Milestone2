@@ -1,3 +1,4 @@
+                /* Map Setup */
                 var map;
                 var InforObj = [];
 
