@@ -2,8 +2,8 @@
 
 Milestone Two Project: Interactive Frontend Development - Code Institute
 
-This is an Interactive site that calls on the Google Maps API to show the best digital nomad destinations around the world with information & links to go with it.
-The site has a map that marks the best destinations around the world, best for aspiring or veteran digital nomads to work & live from.
+This is an Interactive site that calls on the Google Maps API to show the best Digital Nomad destinations around the world with information & links to go with it.
+The site has a map that marks the best destinations around the world, best for aspiring or veteran Digital Nomads to work & live from.
 When a marker location is clicked - all helpful information, details & useful links show up in a popup above the marker.
 
 ![alt text](https://github.com/mark-joyce/Milestone2/blob/master/assets/images/4-device-image.png "Multi-Device Site Image")
@@ -15,15 +15,15 @@ The live website for the agency can be found [here](https://mark-joyce.github.io
 
 ### User stories
 
-**User Story 1:** As a site visitor I would like to find out more about what a digital nomad is and does.
+**User Story 1:** As a site visitor I would like to find out more about what a Digital Nomad is and does.
 
-**User Story 2:** As a site visitor I would like to be able to see the best digital nomad destinations.
+**User Story 2:** As a site visitor I would like to be able to see the best Digital Nomad destinations.
 
 **User Story 3:** As a site visitor I would like to read through the information of each markered location and to see which destination suits me best.
 
 **User Story 4:** As a site visitor I would like to find remote work to be able to work in the place that suits me best and the possibility to book flights and book accommodation in that location.
 
-**User Story 5:** As the site owner I want to provide the best information to the aspiring or veteran digital nomad, through an interactive map with multiple markers, and to monetise the site through affiliate links to help visitors find remote work, book flights and book accommodation.
+**User Story 5:** As the site owner I want to provide the best information to the aspiring or veteran Digital Nomad, through an interactive map with multiple markers, and to monetise the site through affiliate links to help visitors find remote work, book flights and book accommodation.
 
 ### Target Audience
 
@@ -53,11 +53,32 @@ The colour scheme used is simple with most colour coming from the map. The left 
 The following [mockup](https://github.com/mark-joyce/Milestone2/blob/master/mockups/original-mockup.jpg) and [wireframes](https://github.com/mark-joyce/Milestone2/tree/master/wireframes) were created at the start to help design the site for desktop, tablet and mobile displays.
 
 ## Technologies
-1. HTML
-2. CSS
-3. Bootstrap
-4. JQuery
-5. Javascript
+
+### Programming languages
+
+- **HTML** - The project used HTML to define the structure, the layout and some content of the site.
+
+- **CSS** - The project used CSS to style the site's elements and for media queries on mobile.
+
+- **JavaScript** - The project used Javascript to implement the Google Maps API and customise it.
+
+### Libraries
+
+- [jQuery](https://code.jquery.com/) - Used to simplify DOM manipulation.
+
+- [Google Fonts](https://fonts.google.com/) -  Google Fonts library was used for the Montserrat font of the site.
+
+### Frameworks
+
+- [Bootstrap](https://getbootstrap.com/) - The project used Bootstrap to create the layout of the site with the sidebar on the left and map on the right.
+
+### Other
+
+- [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorial) - Used to implement the map and its features on the site.
+
+- [Canva](https://www.canva.com/) - Used to create the logo for the site.
+
+- [Favicon.io](https://favicon.io/emoji-favicons/) - Used to create the favicon for the site.
 
 ## Features
 
