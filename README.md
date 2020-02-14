@@ -85,13 +85,14 @@ The following [mockup](https://github.com/mark-joyce/Milestone2/blob/master/mock
 ### Existing Features
 The project consists of the following features:
 
-- Top digital nomad destinations shown on the interactive map using numbered markers (1-9).
-- The interactive map was altered to not have the default Google Maps UI with no street view option or satellite/terrain option - this is to keep the site as simple as possible with no unnecessary features.
-- Each marker is clickable with an InfoWindow of the Google Maps API used.
-- Inside the InfoWindow popup above the marker, it shows information about the location including the specific place and country, a 'what you need to know' section with 5 different headings to give helpful information, and 3 buttons linking to external 'affiliated' sites.
-- The buttons include - a 'find remote work' one that links to WeWorkRemotely which is a remote work job search platform, a 'book your flight' one that links to SkyScanner which finds the cheapest flights to the location, and a 'book your accommodation' one that links to AirBnB which lists properties to stay in at the markered location.
-- The left sidebar has 3 tabs, content inside each one, and the site's 'The Nomad 9' logo at the bottom of the sidebar.
-- The tabs include - a 'Welcome!' tab welcoming site visitors and shows how to use the site, a 'Nomadic?' tab that describes what a digital nomad is, and a 'Sponsors' tab that shows the site's affiliated sponsors with buttons to go to the external site.
+- **Labelled Markers** - Top digital nomad destinations shown on the interactive map using numbered markers (1-9).
+- **Interactive Map** - Altered to not have the default Google Maps UI with no street view option or satellite/terrain option, with GestureHandling set to 'Greedy' for full control for the user - this is to keep the site as simple as possible with no unnecessary features.
+- **InfoWindow Popup** - Each marker is clickable with an InfoWindow of the Google Maps API used.
+- **Location Information** - Inside the InfoWindow popup above the marker, it shows information about the location including the specific place and country, a 'what you need to know' section with 5 different headings to give helpful information, and 3 buttons linking to external 'affiliated' sites.
+- **Green Buttons** - The buttons include - a 'find remote work' one that links to WeWorkRemotely which is a remote work job search platform, a 'book your flight' one that links to SkyScanner which finds the cheapest flights to the location, and a 'book your accommodation' one that links to AirBnB which lists properties to stay in at the markered location.
+- **Sidebar** - The left sidebar has 3 headings with content under each one, and the site's 'The Nomad 9' logo at the top of the sidebar.
+- **Sidebar Content** - The content includes - a 'Welcome!' heading welcoming site visitors and tells you how to use the site, a 'Go Nomadic...' heading that describes what a digital nomad is, and an 'Our Sponsors' heading that shows the site's 'affiliated' sponsors with a disclaimer that we will get a 'commission' if visitors book through our links.
+- **Mobile Header** - On mobile (under 767px) the sidebar does not show and instead there is a white header with the site's logo and it welcomes and tells the site visitor how to use the site.
 
 ### Features Left to Implement
 List of features to be implemented in the future:
