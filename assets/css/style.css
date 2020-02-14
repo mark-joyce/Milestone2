@@ -12,7 +12,7 @@
 
 #heading {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 900px;
+  font-weight: 600px;
 }
 
 .button {
@@ -80,4 +80,27 @@
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
   }
+}
+
+.mobileShow {
+  display: none;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+
+  .mobileShow {
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+
+  .mobileBrand {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
