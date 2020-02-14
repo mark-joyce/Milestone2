@@ -76,10 +76,6 @@ The following [mockup](https://github.com/mark-joyce/Milestone2/blob/master/mock
 
 - [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorial) - Used to implement the map and its features on the site.
 
-- [Canva](https://www.canva.com/) - Used to create the logo for the site.
-
-- [Favicon.io](https://favicon.io/emoji-favicons/) - Used to create the favicon for the site.
-
 ## Features
 
 ### Existing Features
@@ -115,7 +111,7 @@ The site was developed using GitPod. To keep records of different versions of al
 
 In order to track the changes in the local repository the following steps were taken:
 
-- command `git add 'filename'` - to update what will be committed;
+- command `git add 'filename'` - to update what will be committed.
 
 - command `git commit` - to commit the changes.
 
@@ -124,33 +120,33 @@ Using `git push` command all changes from the local repository were pushed to th
 
 This project is hosted using GitHub pages, deployed directly from the `master` branch. 
 
-To deploy my project from GitHub I followed these steps:
+To deploy my project from GitHub I followed these steps.
 
-1. On GitHub website I logged onto my account and navigated to [my repository](https://github.com/mark-joyce/Milestone2);
+1. On GitHub website I logged onto my account and navigated to [my repository](https://github.com/mark-joyce/Milestone2).
 
-2. Under my repository name, I clicked on **Settings** tab;
+2. Under my repository name, I clicked on **Settings** tab.
 
-3. I scrolled down to the **GitHub Pages** section;
+3. I scrolled down to the **GitHub Pages** section.
 
-4. On the **Select source** drop-down menu I selected `master` as my GitHub Pages publishing source;
+4. On the **Select source** drop-down menu I selected `master` as my GitHub Pages publishing source.
 
 5. I clicked **Save**.
 
 The deployed site will update automatically upon new commits to the `master` branch. It is important to remember that for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
 
-In order to clone my GitHub repository to your local one you should follow these steps:
+In order to clone my GitHub repository to your local one you should follow these steps.
 
-1. On GitHub navigate to [my repository](https://github.com/mark-joyce/Milestone2);
+1. On GitHub navigate to [my repository](https://github.com/mark-joyce/Milestone2)
 
-2. Under the repository name, click **Clone or download**;
+2. Under the repository name, click **Clone or download**.
 
-3. In the Clone with HTTPs section, copy the clone URL for the repository;
+3. In the Clone with HTTPs section, copy the clone URL for the repository.
 
-4. Go to IDE that you are using and open terminal;
+4. Go to IDE that you are using and open terminal.
 
-5. Change the current working directory to the location where you want the cloned directory to be made;
+5. Change the current working directory to the location where you want the cloned directory to be made;=.
 
-6. Type `git clone` and then paste the URL you copied in Step 3;
+6. Type `git clone` and then paste the URL you copied in Step 3.
 
 ```
 $ git clone https://github.com/mark-joyce/Milestone2
@@ -161,9 +157,26 @@ $ git clone https://github.com/mark-joyce/Milestone2
 ## Credits
 
 ### Content
-
+Content of the site is largely based on the [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorial) and their documentation & tutorials, also this [article](https://ie.oberlo.com/blog/cheapest-places-to-live-in-the-world) was used to help fill up the information of the markered locations.
 
 ### Media
+[Canva](https://www.canva.com/) was used to create 'The Nomad 9' logo for the site.
 
+[Favicon.io](https://favicon.io/emoji-favicons/) was used to create the favicon for the site.
 
 ### Acknowledgements
+The site's layout used this simple bootstrap [template](https://startbootstrap.com/templates/simple-sidebar/) as a base to build off from.
+
+Bootstrap's [documentation](https://getbootstrap.com/docs/4.4/components/card/) was used to help create the content of the sidebar.
+
+This [tutorial](http://www.freakyjolly.com/embed-google-maps-with-multiple-markers-and-infowindows-info-popups-open-on-click-or-mouse-hover/) was used to help create the multiple InfoWindows for the markers.
+
+This [solution](https://stackoverflow.com/questions/11903720/stop-google-maps-api-from-scrolling-to-a-grey-area) helped restrict the scrolling area of the map to stop the map from moving further away from the middle.
+
+This Google Maps [document](https://developers.google.com/maps/documentation/javascript/interaction) helped set the loading zoom level of the map and giving site visitors full control of the map.
+
+This [document](https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/javascript/examples/control-disableUI) was used to disable the default Google Maps UI.
+
+This [document](https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/javascript/examples/marker-labels) was used to help number the markers 1-9 using labels.
+
+This [article](https://blog.hubspot.com/marketing/site-content-only-mobile-viewers-can-see-ht) was used to help restrict site content with the header for mobile only. 
