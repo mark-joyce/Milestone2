@@ -54,7 +54,7 @@ The following [mockup](https://github.com/mark-joyce/Milestone2/blob/master/mock
 
 ## Technologies
 
-### Programming languages
+### Languages Used
 
 - **HTML** - The project used HTML to define the structure, the layout and some content of the site.
 
@@ -99,11 +99,85 @@ List of features to be implemented in the future:
 
 ## Testing
 
-### Planning
+### Code validation
 
-### Implementation
+#### HTML
 
-### Results & Outcomes
+The HTML code was validated using the [W3C Markup Validation Service](https://validator.w3.org/).
+
+There was no problems with the HTML - 'Document checking completed. No errors or warnings to show.'
+
+
+#### CSS
+
+The CSS code was validated using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
+
+While validating the CSS code the following error appeared: 
+
+```
+Value Error : font-weight 600px is not a font-weight value : 600px
+```
+
+This was a mistake by me, accidentally putting a pixel size on a font-weight value where it should be 600, not 600px - this was fixed upon seeing this error.
+
+#### JavaScript
+
+The JavaScript code was validated using [JSHint](https://jshint.com/).
+
+While validating the JavaScript code the following warning appeared: 
+
+```
+Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (closeOtherInfo, InforObj)
+```
+
+The warning is referencing this line - `marker.addListener('click', function() {` - upon investigating it more and following the code of this [tutorial](http://www.freakyjolly.com/embed-google-maps-with-multiple-markers-and-infowindows-info-popups-open-on-click-or-mouse-hover/) I decided to leave it the way it is after testing it numerous of times over different browsers and devices, there was never a problem with the 'warning'.
+
+### Features Testing
+
+During this test, it was a relatively easy process with no notable bugs to mention with the 'existing features' discussed above. One tiny unresolved bug includes the links of the green buttons of the InfoWindow Popups on the map, opening up in a new tab but reloading over each other.
+
+All links to external sites will open in a new tab using 'target="_blank"' for the best user experience. The buttons with links inside them have been manually tested to ensure that they are pointing to the correct destination.
+
+
+### Responsive Testing
+
+This site was tested across multiple browsers (Google Chrome, Safari, Firefox) and on multiple mobile devices (iPad Mini, OnePlus One) to ensure compatibility and responsiveness.
+
+The Google Chrome developer tools were used to additionally inspect responsiveness for the following devices in both portrait and landscape mode:
+
+- iPad Pro / iPad
+
+- iPhone 5/SE 
+
+- iPhone 6/7/8 
+
+- iPhone 6/7/8 Plus 
+
+- iPhone X 
+
+- Galaxy S5
+
+- Android Pixel 2/XL
+
+The website is fully responsive and working well on mobile devices, with media queries used to make the site look well with a mobile-only header on mobile devices under 767px.
+
+### User Stories Testing
+
+**User Story 1:**
+
+- Solution: The left sidebar shows users information about what a Digital Nomad is and does. 
+
+**User Story 2:** 
+
+- Solution: The interactive map shows users the best Digital Nomad destinations with 9 seperate markers worldwide.
+
+**User Story 3:** 
+
+- Solution: The markers on the map show information in a popup when the marker is clicked, with the placename & country and a 'what you need to know' section with helpful information.
+
+**User Story 4:** 
+
+- Solution: The 3 Green Buttons in the popup on the markers of the map link to helpful sites so users can find remote work, book flights or find accommodation in that top location.
 
 
 ## Deployment
@@ -136,7 +210,7 @@ The deployed site will update automatically upon new commits to the `master` bra
 
 In order to clone my GitHub repository to your local one you should follow these steps.
 
-1. On GitHub navigate to [my repository](https://github.com/mark-joyce/Milestone2)
+1. On GitHub navigate to [my repository](https://github.com/mark-joyce/Milestone2).
 
 2. Under the repository name, click **Clone or download**.
 
@@ -169,7 +243,7 @@ The site's layout used this simple bootstrap [template](https://startbootstrap.c
 
 Bootstrap's [documentation](https://getbootstrap.com/docs/4.4/components/card/) was used to help create the content of the sidebar.
 
-This [tutorial](http://www.freakyjolly.com/embed-google-maps-with-multiple-markers-and-infowindows-info-popups-open-on-click-or-mouse-hover/) was used to help create the multiple InfoWindows for the markers.
+This [tutorial](http://www.freakyjolly.com/embed-google-maps-with-multiple-markers-and-infowindows-info-popups-open-on-click-or-mouse-hover/) was used to help create the multiple InfoWindows for the markers, and to link the placeName and contentMarker to the markersOnMap in the JavaScript file.
 
 This [solution](https://stackoverflow.com/questions/11903720/stop-google-maps-api-from-scrolling-to-a-grey-area) helped restrict the scrolling area of the map to stop the map from moving further away from the middle.
 
@@ -179,4 +253,4 @@ This [document](https://developers-dot-devsite-v2-prod.appspot.com/maps/document
 
 This [document](https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/javascript/examples/marker-labels) was used to help number the markers 1-9 using labels.
 
-This [article](https://blog.hubspot.com/marketing/site-content-only-mobile-viewers-can-see-ht) was used to help restrict site content with the header for mobile only. 
+This [article](https://blog.hubspot.com/marketing/site-content-only-mobile-viewers-can-see-ht) was used to help restrict site content with the header for mobile only.
